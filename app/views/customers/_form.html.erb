@@ -1,0 +1,46 @@
+ <%= flash[:error] %>
+<%= form_for(@customer) do |f| %>
+
+  <% if @customer.errors.any? %>
+    <div id="error_explanation">
+
+      <h2><%= pluralize(@customer.errors.count, "error") %> errores en el formulario:</h2>
+
+      <ul>
+      <% @customer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <form role="form">
+    <div class="field form-group">
+      <%= f.label :name, "Nombre" %><br>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= f.label :last_name, "Apellido" %><br>
+      <%= f.text_field :last_name, class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= f.label :cc, "Cédula" %><br>
+      <%= f.text_field :cc, class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= f.label :phone, "Teléfono" %><br>
+      <%= f.text_field :phone, class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= f.label :email %><br>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <%= label_tag :code, "Código" %><br>
+      <%= text_field_tag :code, nil, class: "form-control" %>
+    </div><br>
+    <div class="actions">
+      <%= f.submit "Inscribirse", class: "btn btn-lg btn-success pull-right" %>
+    </div>
+  </form> 
+<% end %>

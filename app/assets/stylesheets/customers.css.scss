@@ -1,0 +1,67 @@
+// Place all the styles related to the customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+	color: #f8f8f8;
+}
+
+h1{
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+}
+
+h3 {
+	color:#EBEB33;
+	text-shadow: 1px 1px 1px #000;
+}
+
+p {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.container {
+	background-image: asset-url("background-kumho.png", image);
+	background-position: center;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+.promo-logo {
+	width: 25%;
+	min-width: 250px;
+	margin-left: 5%;
+}
+
+.tv-image {
+	width: 80%;
+	margin-top: 20%;
+	margin-left: 15%;
+}
+
+#error_explanation {
+	border-style: solid;
+	border-width: 1px;
+	padding: 15px;
+	margin: 15px;
+}
+
+
+@media screen and (max-width: 770px) {
+
+	.tv-image {
+		max-width: 350px;
+		margin-top: 2%;
+		margin-left:15%;
+	}
+
+	.promo-logo {
+		margin-left: 20%;
+	}
+
+}
+
