@@ -13,11 +13,19 @@ h1{
 }
 
 h3 {
-	color:#EBEB33;
+	color:#FFD119;
 	text-shadow: 1px 1px 1px #000;
+	font-size: 30px;
 }
 
 p {
+	text-shadow: 1px 1px 1px #000;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+strong {
+	color:#FFD119;
 	text-shadow: 1px 1px 1px #000;
 }
 
@@ -33,8 +41,8 @@ p {
 
 .promo-logo {
 	min-width: 250px;
-	margin-left: 5%;
 }
+
 
 .tv-image {
 	width: 80%;
@@ -47,8 +55,33 @@ p {
 	border-width: 1px;
 	padding: 15px;
 	margin: 15px;
+	text-shadow: 1px 1px 1px #000;
+
+	h2 {
+		color: #ffd119;
+	}
+
+	li {
+		color: #ffd119;
+		font-size: 16px;
+	}
 }
 
+.insert-code {
+	color: #ffd119;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 17px;
+	
+}
+
+#input-code {
+	background: #FF4D4D;
+	padding: 25px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+
+}
 
 @media screen and (max-width: 770px) {
 
@@ -61,6 +94,11 @@ p {
 	.promo-logo {
 		margin-left: 20%;
 	}
+
+	.kumho-logo {
+		display: none;
+	}
+
 
 }
 
