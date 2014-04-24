@@ -19,7 +19,7 @@ body {
 
 .navbar-default {
 	background-color: #EF0010;
-	max-height: 60px;
+	max-height: 70px;
 	text-align: center;
 }
 
@@ -28,6 +28,19 @@ body {
 	margin: 10px 25px;
 	font-size: 10px;
 	line-height: 15px;
+}
+
+
+.footer-link {
+	color: #fff;
+	margin: 10px 25px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.footer-link:hover {
+	color: #f7f7f7;
+	font-size: 13px;
 }
 
 .footer-logo {
