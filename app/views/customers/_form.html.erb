@@ -14,7 +14,7 @@
     </div>
   <% end %>
 
-  <form role="form">
+  <!-- <form role="form">
     <div class="field form-group">
       <%= f.label :name, "Nombre", class: "insert-code" %><br>
       <%= f.text_field :name, class: "form-control" %>
@@ -42,5 +42,73 @@
     <div class="actions">
       <%= f.submit "Inscribirse", class: "btn btn-lg btn-success pull-right" %>
     </div>
-  </form> 
+  </form> -->
+
+  <div class="container">
+
+        <div class="col-lg-10 col-lg-offset-1">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Ingresa tus datos</h2>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                    <%= f.label :name, "Nombre", class: "insert-code" %><br>
+                    <%= f.text_field :name, class: "form-control" %>
+               <!-- <label for="inputEmail" class="">Nombre <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Nombre" required autofocus> -->
+              </div>
+              <div class="col-md-4">
+                    <%= f.label :cc, "Cédula", class: "insert-code" %><br>
+                    <%= f.text_field :cc, class: "form-control" %>      
+                <!-- <label for="inputEmail" class="">Cédula <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <%= label_tag :code, "Ingresa tu código", class: "insert-code" %><br>
+                <%= text_field_tag :code, nil, class: "form-control", placeholder: "Ingresa tu código" %>
+                <!-- <label for="inputEmail" class="">Código Raspa y Gana <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+              </div> 
+              <div class="col-md-4">
+                <label for="inputEmail" class="">Factura Numero <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputEmail" class="">Telefono fijo <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail" class="">Telefono celular <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail" class="">Correo Electronico <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputEmail" class="">Ciudad dónde compró <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="col-md-4">
+                <label for="inputPassword" class="">Nombre Distribuidor o almacén <small class="requerido"> (Requerido)</small></label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+               </div> 
+            </div>
+            <br>
+            <br>
+            <div class="col-md-3 col-md-offset-9">
+                <button class="btn btn-md btn-primary btn-block" type="submit">Enviar</button>
+            </div>
+            
+          </form>
+         </div>  
 <% end %>
