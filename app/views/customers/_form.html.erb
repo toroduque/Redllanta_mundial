@@ -20,8 +20,7 @@
       <%= f.text_field :name, class: "form-control" %>
     </div>
     <div class="field form-group">
-      <%= f.label :last_name, "Apellido", class: "insert-code" %><br>
-      <%= f.text_field :last_name, class: "form-control" %>
+
     </div>
     <div class="field form-group">
       <%= f.label :cc, "Cédula", class: "insert-code" %><br>
@@ -46,6 +45,8 @@
 
   <div class="container">
 
+      <%= image_tag("bannertop.png", :alt => "Redllantas - Promoción Raspa y Gana") %>
+
         <div class="col-lg-10 col-lg-offset-1">
           <form class="form-signin">
             <h2 class="form-signin-heading">Ingresa tus datos</h2>
@@ -68,45 +69,60 @@
             <div class="row">
               <div class="col-md-4">
                 <%= label_tag :code, "Ingresa tu código", class: "insert-code" %><br>
-                <%= text_field_tag :code, nil, class: "form-control", placeholder: "Ingresa tu código" %>
+                <%= text_field_tag :code, nil, class: "form-control" %>
                 <!-- <label for="inputEmail" class="">Código Raspa y Gana <small class="requerido"> (Requerido)</small></label>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
               </div> 
               <div class="col-md-4">
-                <label for="inputEmail" class="">Factura Numero <small class="requerido"> (Requerido)</small></label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <%= label_tag :invoice, "Número de factura", class: "insert-code" %><br>
+                <%= text_field_tag :invoice, nil, class: "form-control" %>
+                <!-- <label for="inputEmail" class="">Factura Numero <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" required autofocus> -->
               </div>
             </div>
             <br>
             <div class="row">
               <div class="col-md-4">
-                <label for="inputEmail" class="">Telefono fijo <small class="requerido"> (Requerido)</small></label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <%= f.label :phone, "Teléfono", class: "insert-code" %><br>
+                <%= f.text_field :phone, class: "form-control" %>
+                <!--<label for="inputEmail" class="">Telefono fijo <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
               </div>
               <div class="col-md-4">
-                <label for="inputEmail" class="">Telefono celular <small class="requerido"> (Requerido)</small></label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                 <%= f.label :cellphone, "Celular", class: "insert-code" %><br>
+                 <%= f.text_field :cellphone, class: "form-control" %>
+                <!-- <label for="inputEmail" class="">Telefono celular <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" required autofocus> -->
               </div>
               <div class="col-md-4">
-                <label for="inputEmail" class="">Correo Electronico <small class="requerido"> (Requerido)</small></label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                 <%= f.label :email, "Correo Electrónico", class: "insert-code" %><br>
+                 <%= f.text_field :email, class: "form-control" %>
+                <!-- <label for="inputEmail" class="">Correo Electronico <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
               </div>
             </div>
             <br>
             <div class="row">
               <div class="col-md-4">
-                <label for="inputEmail" class="">Ciudad dónde compró <small class="requerido"> (Requerido)</small></label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                 <%= f.label :city, "Ciudad", class: "insert-code" %><br>
+                 <%= f.text_field :city, class: "form-control" %>
+                <!-- <label for="inputEmail" class="">Ciudad dónde compró <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" required autofocus> -->
               </div>
               <div class="col-md-4">
-                <label for="inputPassword" class="">Nombre Distribuidor o almacén <small class="requerido"> (Requerido)</small></label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                 <%= f.label :dealer, "Distribuidor", class: "insert-code" %><br>
+                 <%= f.text_field :dealer, class: "form-control" %>
+               <!-- <label for="inputPassword" class="">Nombre Distribuidor o almacén <small class="requerido"> (Requerido)</small></label>
+                <input type="password" id="inputPassword" class="form-control" required> -->
                </div> 
             </div>
             <br>
             <br>
             <div class="col-md-3 col-md-offset-9">
-                <button class="btn btn-md btn-primary btn-block" type="submit">Enviar</button>
+              <div class="actions">
+                <%= f.submit "Inscribirse", class: "btn btn-lg btn-success pull-right" %>
+              </div>
+               <!-- <button class="btn btn-md btn-primary btn-block" type="submit">Enviar</button> -->
             </div>
             
           </form>

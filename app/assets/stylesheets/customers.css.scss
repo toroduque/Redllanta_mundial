@@ -4,7 +4,7 @@
 
 
 * {
-	color: #f8f8f8;
+	color: #101010;
 }
 
 h1{
@@ -13,7 +13,7 @@ h1{
 }
 
 h3 {
-	color:#FFD119;
+	color:#101010;
 	text-shadow: 1px 1px 1px #000;
 	font-size: 30px;
 }
@@ -29,60 +29,31 @@ strong {
 	text-shadow: 1px 1px 1px #000;
 }
 
-.container {
-	background-image: asset-url("background-kumho.png", image);
-	background-position: center;
-	-webkit-background-size: cover;
- 	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-
-.promo-logo {
-	min-width: 250px;
-}
-
-
-.tv-image {
-	width: 80%;
-	margin-top: 20%;
-	margin-left: 15%;
-}
 
 #error_explanation {
 	border-style: solid;
 	border-width: 1px;
 	padding: 15px;
 	margin: 15px;
-	text-shadow: 1px 1px 1px #000;
 
 	h2 {
-		color: #ffd119;
+		color: #000;
 		display: none;
 	}
 
 	li {
-		color: #ffd119;
+		color: #000;
 		font-size: 16px;
 	}
 }
 
 .insert-code {
-	color: #ffd119;
-	text-shadow: 1px 1px 1px #000;
-	font-size: 17px;
+	color: #303030;
+	text-weight: normal;
 	
 }
 
-#input-code {
-	background: #FF4D4D;
-	padding: 25px;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
 
-}
 
 @media screen and (max-width: 770px) {
 

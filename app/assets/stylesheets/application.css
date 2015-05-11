@@ -13,9 +13,6 @@
  *= require_tree .
  */
 
-body {
-	background-color: #000030;
-}
 
 .navbar-default {
 	background-color: #EF0010;
