@@ -14,46 +14,22 @@
     </div>
   <% end %>
 
-  <!-- <form role="form">
-    <div class="field form-group">
-      <%= f.label :name, "Nombre", class: "insert-code" %><br>
-      <%= f.text_field :name, class: "form-control" %>
-    </div>
-    <div class="field form-group">
-
-    </div>
-    <div class="field form-group">
-      <%= f.label :cc, "Cédula", class: "insert-code" %><br>
-      <%= f.text_field :cc, class: "form-control" %>
-    </div>
-    <div class="field form-group">
-      <%= f.label :phone, "Teléfono", class: "insert-code" %><br>
-      <%= f.text_field :phone, class: "form-control" %>
-    </div>
-    <div class="field form-group">
-      <%= f.label :email, class: "insert-code" %><br>
-      <%= f.text_field :email, class: "form-control" %>
-    </div>
-    <div class="field form-group">
-      <%= label_tag :code, "Ingresa tu código", class: "insert-code" %><br>
-      <%= text_field_tag :code, nil, class: "form-control", id: "input-code", placeholder: "Ingresa tu código" %>
-    </div><br>
-    <div class="actions">
-      <%= f.submit "Inscribirse", class: "btn btn-lg btn-success pull-right" %>
-    </div>
-  </form> -->
-
   <div class="container">
 
-      <%= image_tag("bannertop.png", :alt => "Redllantas - Promoción Raspa y Gana") %>
+      <%= image_tag("bannertop.png", class: "bannertop", :alt => "Redllantas - Promoción Raspa y Gana") %>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-8 col-lg-offset-2">
           <form class="form-signin">
             <h2 class="form-signin-heading">Ingresa tus datos</h2>
             <br>
             <div class="row">
               <div class="col-md-6">
-                    <%= f.label :name, "Nombre", class: "insert-code" %><br>
+                    <%= f.label :name, "Nombre Completo", class: "insert-code" %><br>
                     <%= f.text_field :name, class: "form-control" %>
                <!-- <label for="inputEmail" class="">Nombre <small class="requerido"> (Requerido)</small></label>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Nombre" required autofocus> -->
@@ -70,6 +46,12 @@
               <div class="col-md-4">
                 <%= label_tag :code, "Ingresa tu código", class: "insert-code" %><br>
                 <%= text_field_tag :code, nil, class: "form-control" %>
+                <!-- <label for="inputEmail" class="">Código Raspa y Gana <small class="requerido"> (Requerido)</small></label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+              </div>
+              <div class="col-md-4">
+                <%= label_tag :prize, "Premio ganado", class: "insert-code" %><br>
+                <%= text_field_tag :prize, nil, class: "form-control" %>
                 <!-- <label for="inputEmail" class="">Código Raspa y Gana <small class="requerido"> (Requerido)</small></label>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
               </div> 
@@ -120,7 +102,7 @@
             <br>
             <div class="col-md-3 col-md-offset-9">
               <div class="actions">
-                <%= f.submit "Inscribirse", class: "btn btn-lg btn-success pull-right" %>
+                <%= f.submit "Inscribirse", class: "btn btn-lg btn-danger pull-right" %>
               </div>
                <!-- <button class="btn btn-md btn-primary btn-block" type="submit">Enviar</button> -->
             </div>
