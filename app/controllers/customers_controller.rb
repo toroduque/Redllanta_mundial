@@ -26,7 +26,7 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
 
     if Code.valid_code?(code)
-      @customer.code_id = Code.find_by_code(code).id
+      @customer.code_id = Code.find_or_create_by_code(code).id
       render(action: 'new') unless @customer.save
     else
       @customer.errors.add(:base, "El código es inválido o ya fue usado.")
