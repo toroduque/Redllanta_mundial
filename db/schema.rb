@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 20150515230523) do
     t.string   "city"
     t.string   "dealer"
     t.string   "prize"
-    t.string   "code_id"
   end
 
 end
