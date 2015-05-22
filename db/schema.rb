@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20150515230523) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "code_id"
+    t.string   "code_id"
     t.string   "invoice"
     t.string   "cellphone"
     t.string   "city"
