@@ -47,12 +47,12 @@
               </div>
               <div class="col-md-4">
                 <%= label_tag :prize, "Premio ganado", class: "insert-code" %><br>
-                <%= text_field_tag :prize, nil, class: "form-control" %>
+                <%= f.text_field :prize, class: "form-control" %>
               
               </div> 
               <div class="col-md-4">
                 <%= label_tag :invoice, "Número de factura", class: "insert-code" %><br>
-                <%= text_field_tag :invoice, nil, class: "form-control" %>
+                <%= f.text_field :invoice, class: "form-control" %>
 
               </div>
             </div>
